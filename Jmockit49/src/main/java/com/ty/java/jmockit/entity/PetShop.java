@@ -12,6 +12,10 @@ public class PetShop{
         this.shopName = shopName;
     }
 
+    public static Integer getMaxAnimalSize() {
+        return null;
+    }
+
     public Boolean getIsOpen(){
         return isOpen;
     }
@@ -29,11 +33,11 @@ public class PetShop{
         return null;
     }
 
-    public void add(Animal animal){
+    public Boolean add(Animal animal){
         if (animal == null) {
             throw new NullPointerException("add animal failed, animal is null");
         }
-        animalList.add(animal);
+        return animalList.add(animal);
     }
 
     public void showAnimals(){
@@ -45,4 +49,5 @@ public class PetShop{
     public List<Animal> getAnimalList() {
         return new ArrayList<>(animalList);
     }
+
 }

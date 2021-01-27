@@ -1,6 +1,7 @@
 package com.ty.java.jmockit.entity;
 
-public class Animal {
+public abstract class Animal {
+    private Integer id;
     protected Boolean isHealthy;
     private String name;
     private Integer age;
@@ -18,6 +19,8 @@ public class Animal {
     public Integer getAge() {
         return age;
     }
+
+    public abstract Boolean isHealthy();
 
     @Override
     public boolean equals(Object o) {

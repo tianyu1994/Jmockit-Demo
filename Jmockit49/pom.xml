@@ -68,12 +68,12 @@
                         -javaagent:"${settings.localRepository}/org/jmockit/jmockit/${jmockit.version}/jmockit-${jmockit.version}.jar"
                     </argLine>
                     <skip>false</skip><!--true:则跳过测试-->
-                    <includes>
-                        <include>**/Mock*.java</include>
-                    </includes>
-                    <excludes>
-                        <exclude>**/MockPrivateMethod.java</exclude>
-                    </excludes>
+<!--                    <includes>-->
+<!--                        <include>**/Mock*.java</include>-->
+<!--                    </includes>-->
+<!--                    <excludes>-->
+<!--                        <exclude>**/MockPrivateMethod.java</exclude>-->
+<!--                    </excludes>-->
                     <parallel>methods</parallel>
                     <threadCount>10</threadCount>
                     <testFailureIgnore>true</testFailureIgnore><!--配置1：缺省的情况下，若有案例失败则中断运行，需改为true以忽略案例失败，让后面的上传步骤可以执行-->

@@ -3,15 +3,13 @@ package com.ty.java.jmockit.testedinjectable;
 import com.ty.java.jmockit.service.MailService;
 import com.ty.java.jmockit.service.PetShopServiceImpl;
 import com.ty.java.jmockit.service.UserService;
-import mockit.Expectations;
 import mockit.Injectable;
 import mockit.MockUp;
 import mockit.Tested;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 
 /**
- *1.37移除了MockUp类的getMockInstance（），所以不再使用MockUp来mock接口
+ * 1.37移除了MockUp类的getMockInstance（），所以不再使用MockUp来mock接口
  * Injectable和MockUp搭配来mock类也不能生效
  */
 public class NotSupportTestedInjectableMockUpTest {
@@ -25,7 +23,6 @@ public class NotSupportTestedInjectableMockUpTest {
     @Injectable
     UserService userService;
 
-    @Test
     void test_tested_injectable_mock_mailService() throws Exception {
         new MockUp<MailService>(){
             public Boolean sendMail(){
