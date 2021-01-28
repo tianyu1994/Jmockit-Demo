@@ -1,4 +1,9 @@
- # Demo for using Jmockit 1.49 and Junit5 without other frameworks
+ # Demo for Jmockit
+    using Jmockit 1.49 and Junit5 without other frameworks
+
+简介 | JMockit 官方教程(中文)
+https://t3573393.gitbooks.io/jmockit-tutorial-chinese/content/Introduction.html
+
 
 
 ### 一、支持：
