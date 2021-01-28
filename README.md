@@ -1,5 +1,4 @@
-# JmockitDemo 1.49
-Demo for using Jmockit
+ # Demo for using Jmockit 1.49 and Junit5 without other frameworks
 
 
 ### 一、支持：
