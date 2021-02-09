@@ -50,4 +50,12 @@ public class PetShop{
         return new ArrayList<>(animalList);
     }
 
+    @Override
+    public String toString() {
+        return "PetShop{" +
+                "shopName='" + shopName + '\'' +
+                ", animalList=" + animalList +
+                ", isOpen=" + isOpen +
+                '}';
+    }
 }
